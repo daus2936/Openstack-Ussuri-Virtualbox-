@@ -509,7 +509,7 @@ novncproxy_base_url = http://$IP:6080/vnc_auto.html
 EOF
 
 echo "starting nova services"
-systemctl enable --now openstack-nova-compute 
+systemctl enable --now openstack-nova-compute
 systemctl restart openstack-nova-api
 systemctl restart openstack-nova-conductor
 systemctl restart openstack-nova-scheduler
@@ -670,12 +670,15 @@ systemctl enable --now neutron-l3-agent
 systemctl enable --now neutron-metadata-agent
 systemctl enable --now neutron-openvswitch-agent
 systemctl enable --now neutron-server.service
-
-systemctl restart openstack-nova-compute
+ 
 systemctl restart openstack-nova-api
 systemctl restart openstack-nova-conductor
 systemctl restart openstack-nova-scheduler
 systemctl restart openstack-nova-novncproxy
+
+systemctl stop libvirtd.service openstack-nova-compute.service
+systemctl restart libvirtd.service openstack-nova-compute.service
+
 
 
 
