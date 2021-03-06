@@ -1,5 +1,5 @@
 #!/bin/bash
-IP="192.168.100.130"
+IP="192.168.100.128"
 KEYSTONE_DBPASS="password"
 ADMIN_PASS="Sepeda36"
 #GLANCE_STORAGE variable is NFS mount point 
