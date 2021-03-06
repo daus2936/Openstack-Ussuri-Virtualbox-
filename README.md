@@ -30,5 +30,5 @@ and make sure "Promiscuous Mode" is "Allow All"<br />
 - First,run the nfs-server.sh script on storageVM ,don't forget to change the IP and another variable on variable.sh! <br />
 `./nfs-server.sh` <br />
 
-- Second,run the openstackussuri.sh ,don't forget to change the IP and another variable on variable.sh! <br />
+- Second,run the openstackussuri.sh on openstackVM,don't forget to change the IP and another variable on variable.sh! <br />
 `./openstackussuri.sh` <br />
