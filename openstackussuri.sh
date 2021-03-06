@@ -64,7 +64,7 @@ rabbitmqctl set_permissions openstack ".*" ".*" ".*"
 
 echo "Starting installation of Keystone"
 dnf config-manager --set-enabled powertools
-dnf --enablerepo=powertools install fontawesome-fonts-web
+dnf --enablerepo=powertools -y install fontawesome-fonts-web
 yum -y install openstack-keystone python3-openstackclient httpd mod_ssl python3-mod_wsgi python3-oauth2client
 setsebool -P httpd_use_openstack on 
 setsebool -P httpd_can_network_connect on
