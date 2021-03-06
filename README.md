@@ -25,8 +25,8 @@ and make sure "Promiscuous Mode" is "Allow All"<br />
 - Don't add any IP address(empty it) on the second network interface (enp0s8),just edit the second network interface configuration file with this value : <br />
 ```
 TYPE=Ethernet 
-NAME=enp0s8 <br>
-DEVICE=enp0s8 <br>
+NAME=enp0s8 
+DEVICE=enp0s8 
 ONBOOT=yes 
 BOOTPROTO=none
 ```
