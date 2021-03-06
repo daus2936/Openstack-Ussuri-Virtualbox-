@@ -7,7 +7,7 @@ systemctl stop firewalld
 systemctl disable firewalld
 
 echo "Installing nfs server"
-dnf install nfs-utils 
+dnf -y install nfs-utils 
 systemctl start nfs-server.service
 systemctl enable nfs-server.service
 
