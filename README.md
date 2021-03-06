@@ -18,7 +18,7 @@ and make sure "Promiscuous Mode" is "Allow All"<br />
 - ![network2](https://user-images.githubusercontent.com/55316038/110207509-81b1e880-7eb6-11eb-9945-2f8a7ad2bcbc.PNG)<br />
 <br />
 
-- enable Nested VT-X/AMD-V on VM setting ,go to your virtualbox directory and type this on your command prompt(cmd) or terminal : <br />
+- enable Nested VT-X/AMD-V ,go to your virtualbox directory and type this on your command prompt(cmd) or terminal.Change "YourVirtualBoxName" to your VM name : <br />
 `VBoxManage modifyvm YourVirtualBoxName --nested-hw-virt on` <br />
 
 - clone my repository on openstackVM and storageVM: <br />
