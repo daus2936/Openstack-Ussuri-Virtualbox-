@@ -687,6 +687,13 @@ systemctl restart openstack-nova-conductor
 systemctl restart openstack-nova-scheduler
 systemctl restart openstack-nova-novncproxy
 
+echo "Creating Cirros Image"
+mkdir $IMAGES_LOCATION
+wget http://download.cirros-cloud.net/0.5.1/cirros-0.5.1-x86_64-disk.img -P $IMAGES_LOCATION
+source $ADMIN_USER_FILE
+openstack image create --disk-format qcow2 --container-format bare --file /root/images/cirros-0.5.1-x86_64-disk.img --public cirros
+
+
 
 
 
