@@ -672,7 +672,8 @@ systemctl enable --now neutron-openvswitch-agent
 systemctl enable --now neutron-server.service
 
 nova-manage cell_v2 discover_hosts --verbose
- 
+
+systemctl restart openstack-nova-compute 
 systemctl restart openstack-nova-api
 systemctl restart openstack-nova-conductor
 systemctl restart openstack-nova-scheduler
