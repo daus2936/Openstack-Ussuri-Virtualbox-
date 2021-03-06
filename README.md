@@ -21,6 +21,15 @@ and make sure "Promiscuous Mode" is "Allow All"<br />
 - enable Nested VT-X/AMD-V ,go to your virtualbox directory and type this on your command prompt(cmd) or terminal.Change "YourVirtualBoxName" to your VM name : <br />
 `VBoxManage modifyvm YourVirtualBoxName --nested-hw-virt on` <br />
 
+- Make sure to change the IP address of the first network interface (enp0s3) to static IP address and don't add any IP address(empty it) on the second network interface (enp0s8),just edit the second network interface configuration file with this value : <br />
+```
+TYPE=Ethernet 
+NAME=enp0s8 <br>
+DEVICE=enp0s8 <br>
+ONBOOT=yes 
+BOOTPROTO=none
+```
+
 - clone my repository on openstackVM and storageVM: <br />
 `git clone https://github.com/daus2936/Openstack-Ussuri-Virtualbox-.git` <br />
 
