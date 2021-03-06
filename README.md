@@ -1,6 +1,6 @@
 # Openstack-Ussuri-Virtualbox-
 
-This is the Openstack Ussuri installation script . The installation step is from the youtube channel named “freakos” youtube channel link : https://www.youtube.com/channel/UCktYL2xWfwmdVcOc3RNGX0w ,i just follow his installation step and make the script of it.
+This is the Openstack Ussuri installation script . The installation step is from the youtube channel named “freakos” ,this is his youtube channel link : https://www.youtube.com/channel/UCktYL2xWfwmdVcOc3RNGX0w ,i just follow his installation step and make the script of it.
 Requirement: <br />
 - Virtualbox with 2 VM : <br />
 1 VM is for all openstack services (i will call this VM : openstackVM) <br />
