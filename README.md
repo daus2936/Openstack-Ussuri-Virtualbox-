@@ -37,7 +37,7 @@ BOOTPROTO=none
 - after cloning,give file permission to execute the script: <br />
 `chmod +x nfs-server.sh openstackussuri.sh variable.sh` <br />
 
-- First,run the nfs-server.sh script on storageVM ,don't forget to change the IP and another variable on variable.sh! (storageVM) <br /> 
+- First,run the nfs-server.sh script on storageVM (storageVM) <br /> 
 `./nfs-server.sh` <br />
 
 - Second,run the openstackussuri.sh on openstackVM,don't forget to change the IP and another variable on variable.sh! (openstackVM) <br />
