@@ -22,7 +22,7 @@ and make sure "Promiscuous Mode" is "Allow All"<br />
 `VBoxManage modifyvm YourVirtualBoxName --nested-hw-virt on` <br />
 
 - Make sure to change the IP address of the first network interface (enp0s3) to static IP address. (openstackVM and storageVM) <br /> 
-- Don't add any IP address(empty it) on the second network interface (enp0s8),just edit the second network interface configuration file with this value : (openstackVM) <br />
+- Don't add any IP address(empty it) on the second network interface (enp0s8),just edit the second network interface configuration file with this value (openstackVM):  <br />
 ```
 TYPE=Ethernet 
 NAME=enp0s8 
