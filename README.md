@@ -21,8 +21,8 @@ and make sure "Promiscuous Mode" is "Allow All"<br />
 - enable Nested VT-X/AMD-V ,go to your virtualbox directory and type this on your command prompt(cmd) or terminal.Change "YourVirtualBoxName" to your VM name : <br />
 `VBoxManage modifyvm YourVirtualBoxName --nested-hw-virt on` <br />
 
-- Make sure to change the IP address of the first network interface (enp0s3) to static IP address. <br />
-- Don't add any IP address(empty it) on the second network interface (enp0s8),just edit the second network interface configuration file with this value : <br />
+- Make sure to change the IP address of the first network interface (enp0s3) to static IP address. (openstackVM and storageVM) <br /> 
+- Don't add any IP address(empty it) on the second network interface (enp0s8),just edit the second network interface configuration file with this value : (openstackVM) <br />
 ```
 TYPE=Ethernet 
 NAME=enp0s8 
@@ -37,8 +37,8 @@ BOOTPROTO=none
 - after cloning,give file permission to execute the script: <br />
 `chmod +x nfs-server.sh openstackussuri.sh variable.sh` <br />
 
-- First,run the nfs-server.sh script on storageVM ,don't forget to change the IP and another variable on variable.sh! <br />
+- First,run the nfs-server.sh script on storageVM ,don't forget to change the IP and another variable on variable.sh! (storageVM) <br /> 
 `./nfs-server.sh` <br />
 
-- Second,run the openstackussuri.sh on openstackVM,don't forget to change the IP and another variable on variable.sh! <br />
+- Second,run the openstackussuri.sh on openstackVM,don't forget to change the IP and another variable on variable.sh! (openstackVM) <br />
 `./openstackussuri.sh` <br />
